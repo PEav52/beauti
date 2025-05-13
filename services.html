@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Beauty & Spa Wellness</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/ee/7b/8f/ee7b8f6dc119330c7baedd54f7e86f8e.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'luxury-pink': '#FF69B4',
+                        'luxury-white': '#FDFBF7',
+                        'luxury-gray': '#F5F5F5',
+                        'luxury-light': '#FFFFFF',
+                        'luxury-dark': '#F0F0F0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-luxury-white">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-luxury-light shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://i.pinimg.com/736x/ee/7b/8f/ee7b8f6dc119330c7baedd54f7e86f8e.jpg" alt="Logo" class="h-12">
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-luxury-pink focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="relative">
+                        <input type="text" placeholder="Search..." class="px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-luxury-pink">
+                        <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="index.html" class="text-gray-700 hover:text-luxury-pink">Home</a>
+                        <a href="services.html" class="text-luxury-pink">Services</a>
+                        <a href="portfolio.html" class="text-gray-700 hover:text-luxury-pink">Portfolio</a>
+                        <a href="about.html" class="text-gray-700 hover:text-luxury-pink">About</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-luxury-pink">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <div class="relative mb-4">
+                        <input type="text" placeholder="Search..." class="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-luxury-pink">
+                        <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                    </div>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:text-luxury-pink hover:bg-gray-50">Home</a>
+                    <a href="services.html" class="block px-3 py-2 rounded-md text-luxury-pink hover:bg-gray-50">Services</a>
+                    <a href="portfolio.html" class="block px-3 py-2 rounded-md text-gray-700 hover:text-luxury-pink hover:bg-gray-50">Portfolio</a>
+                    <a href="about.html" class="block px-3 py-2 rounded-md text-gray-700 hover:text-luxury-pink hover:bg-gray-50">About</a>
+                    <a href="contact.html" class="block px-3 py-2 rounded-md text-gray-700 hover:text-luxury-pink hover:bg-gray-50">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-12 bg-luxury-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl font-bold text-center mb-4">Our Services</h1>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto">Discover our comprehensive range of beauty and wellness services designed to enhance your natural beauty and promote overall well-being.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="py-20 bg-luxury-gray">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Facial Treatment -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/ae/d0/02/aed002d0b84b1ff15852fbe767574bff.jpg" alt="Facial Treatment" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Facial Treatment</h3>
+                        <p class="text-gray-600 mb-4">Experience our premium facial treatments designed to rejuvenate your skin and enhance your natural glow. Our expert estheticians use high-quality products and advanced techniques to address your specific skin concerns.</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4">
+                            <li>Deep cleansing facial</li>
+                            <li>Anti-aging treatment</li>
+                            <li>Hydrating facial</li>
+                            <li>Acne treatment</li>
+                        </ul>
+                        <p class="text-luxury-pink font-bold text-xl">Starting from $80</p>
+                        <button class="mt-4 bg-luxury-pink text-white px-6 py-2 rounded-full hover:bg-pink-600 transition duration-300">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Massage Therapy -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/45/11/67/4511671fa0e2cff290c9fbf4a504e820.jpg" alt="Massage Therapy" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Massage Therapy</h3>
+                        <p class="text-gray-600 mb-4">Indulge in our therapeutic massage services that help relieve stress, reduce muscle tension, and promote overall relaxation. Our skilled therapists customize each session to meet your specific needs.</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4">
+                            <li>Swedish massage</li>
+                            <li>Deep tissue massage</li>
+                            <li>Hot stone massage</li>
+                            <li>Aromatherapy massage</li>
+                        </ul>
+                        <p class="text-luxury-pink font-bold text-xl">Starting from $100</p>
+                        <button class="mt-4 bg-luxury-pink text-white px-6 py-2 rounded-full hover:bg-pink-600 transition duration-300">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Hair Styling -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/c6/bb/09/c6bb093fdfdac5fccc52a1aed222016a.jpg" alt="Hair Styling" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Hair Styling</h3>
+                        <p class="text-gray-600 mb-4">Transform your look with our professional hair styling services. Our experienced stylists stay up-to-date with the latest trends and techniques to create your perfect style.</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4">
+                            <li>Haircut and styling</li>
+                            <li>Hair coloring</li>
+                            <li>Hair treatments</li>
+                            <li>Special occasion styling</li>
+                        </ul>
+                        <p class="text-luxury-pink font-bold text-xl">Starting from $60</p>
+                        <button class="mt-4 bg-luxury-pink text-white px-6 py-2 rounded-full hover:bg-pink-600 transition duration-300">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Nail Care -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/46/90/e0/4690e0713fa57e135e78646a8f178d5f.jpg" alt="Nail Care" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Nail Care</h3>
+                        <p class="text-gray-600 mb-4">Pamper your hands and feet with our comprehensive nail care services. Our skilled technicians provide meticulous attention to detail for beautiful, healthy nails.</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4">
+                            <li>Manicure and pedicure</li>
+                            <li>Gel nail application</li>
+                            <li>Nail art</li>
+                            <li>Nail treatments</li>
+                        </ul>
+                        <p class="text-luxury-pink font-bold text-xl">Starting from $45</p>
+                        <button class="mt-4 bg-luxury-pink text-white px-6 py-2 rounded-full hover:bg-pink-600 transition duration-300">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Beauty & Spa</h3>
+                    <p class="text-gray-400">Your destination for beauty and wellness services.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Phnom Penh, Cambodia</li>
+                        <li>+855 016700896</li>
+                        <li>info@beautyspa.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Beauty & Spa Wellness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            let isMenuOpen = false;
+
+            // Toggle menu function
+            function toggleMenu() {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenuButton.innerHTML = '<i class="fas fa-times text-2xl"></i>';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.innerHTML = '<i class="fas fa-bars text-2xl"></i>';
+                }
+            }
+
+            // Click event for menu button
+            mobileMenuButton.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleMenu();
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (isMenuOpen && !mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                    toggleMenu();
+                }
+            });
+
+            // Close menu when window is resized to desktop size
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768 && isMenuOpen) {
+                    toggleMenu();
+                }
+            });
+
+            // Prevent menu from closing when clicking inside it
+            mobileMenu.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+</body>
+</html> 

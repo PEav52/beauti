@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Spa Wellness</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/ee/7b/8f/ee7b8f6dc119330c7baedd54f7e86f8e.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'luxury-pink': '#FF69B4',
+                        'luxury-white': '#FDFBF7',
+                        'luxury-gray': '#F5F5F5',
+                        'luxury-light': '#FFFFFF',
+                        'luxury-dark': '#F0F0F0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-luxury-white">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-luxury-light shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://i.pinimg.com/736x/ee/7b/8f/ee7b8f6dc119330c7baedd54f7e86f8e.jpg" alt="Logo" class="h-12">
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-luxury-pink focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="relative">
+                        <input type="text" placeholder="Search..." class="px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-luxury-pink">
+                        <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="index.html" class="text-gray-700 hover:text-luxury-pink">Home</a>
+                        <a href="services.html" class="text-gray-700 hover:text-luxury-pink">Services</a>
+                        <a href="portfolio.html" class="text-gray-700 hover:text-luxury-pink">Portfolio</a>
+                        <a href="about.html" class="text-gray-700 hover:text-luxury-pink">About</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-luxury-pink">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <div class="relative mb-4">
+                        <input type="text" placeholder="Search..." class="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-luxury-pink">
+                        <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                    </div>
+                    <a href="#" class="block px-3 py-2 rounded-md text-gray-700 hover:text-luxury-pink hover:bg-gray-50">Home</a>
+                    <a href="#" class="block px-3 py-2 rounded-md text-gray-700 hover:text-luxury-pink hover:bg-gray-50">Services</a>
+                    <a href="#" class="block px-3 py-2 rounded-md text-gray-700 hover:text-luxury-pink hover:bg-gray-50">Portfolio</a>
+                    <a href="#" class="block px-3 py-2 rounded-md text-gray-700 hover:text-luxury-pink hover:bg-gray-50">About</a>
+                    <a href="#" class="block px-3 py-2 rounded-md text-gray-700 hover:text-luxury-pink hover:bg-gray-50">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-luxury-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-luxury-pink text-xl mb-4">Pick Color</h2>
+                    <h1 class="text-5xl font-bold mb-6">Beauty & Spa Wellness</h1>
+                    <p class="text-gray-600 mb-8">Experience the ultimate relaxation and beauty treatments at our luxurious spa. Our expert therapists are dedicated to providing you with the best wellness experience.</p>
+                    <button class="bg-luxury-pink text-white px-8 py-3 rounded-full hover:bg-pink-600 transition duration-300">
+                        Make An Appointment
+                    </button>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="https://i.pinimg.com/736x/22/28/52/22285218bc08ff084048caa2460e4339.jpg" alt="Beautiful Woman" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Bar -->
+    <section class="bg-luxury-light py-8 shadow-md">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-3xl text-luxury-pink mb-4"></i>
+                    <h3 class="font-semibold mb-2">Opening Time</h3>
+                    <p class="text-gray-600">Mon-Sat 8am-6pm</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-map-marker-alt text-3xl text-luxury-pink mb-4"></i>
+                    <h3 class="font-semibold mb-2">Address</h3>
+                    <p class="text-gray-600">Phnom Penh Cambodia</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-phone text-3xl text-luxury-pink mb-4"></i>
+                    <h3 class="font-semibold mb-2">Telephone</h3>
+                    <p class="text-gray-600">+855 016700896</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-luxury-gray">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto rounded-full border-4 border-luxury-pink p-2 mb-6">
+                        <img src="https://i.pinimg.com/736x/ae/d0/02/aed002d0b84b1ff15852fbe767574bff.jpg" alt="Facial Treatment" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Facial Treatment</h3>
+                    <p class="text-gray-600 mb-4">Rejuvenate your skin with our premium facial treatments.</p>
+                    <p class="text-luxury-pink font-bold">$80</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto rounded-full border-4 border-luxury-pink p-2 mb-6">
+                        <img src="https://i.pinimg.com/736x/45/11/67/4511671fa0e2cff290c9fbf4a504e820.jpg" alt="Massage Therapy" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Massage Therapy</h3>
+                    <p class="text-gray-600 mb-4">Relax your body and mind with our therapeutic massages.</p>
+                    <p class="text-luxury-pink font-bold">$100</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto rounded-full border-4 border-luxury-pink p-2 mb-6">
+                        <img src="https://i.pinimg.com/736x/c6/bb/09/c6bb093fdfdac5fccc52a1aed222016a.jpg" alt="Hair Styling" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Hair Styling</h3>
+                    <p class="text-gray-600 mb-4">Transform your look with our expert hair styling services.</p>
+                    <p class="text-luxury-pink font-bold">$60</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto rounded-full border-4 border-luxury-pink p-2 mb-6">
+                        <img src="https://i.pinimg.com/736x/46/90/e0/4690e0713fa57e135e78646a8f178d5f.jpg" alt="Nail Care" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Nail Care</h3>
+                    <p class="text-gray-600 mb-4">Pamper your hands and feet with our nail care services.</p>
+                    <p class="text-luxury-pink font-bold">$45</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-20 bg-luxury-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative group">
+                    <img src="https://i.pinimg.com/736x/72/cf/61/72cf61e784a02e03af8ce23ed05639a5.jpg" alt="Portfolio 1" class="w-full h-[400px] object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg flex items-center justify-center">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Bridal Makeup</h3>
+                            <p>Complete bridal package</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="https://i.pinimg.com/736x/f9/d6/c9/f9d6c93b3482558ca492f37cc957c9a5.jpg" alt="Portfolio 2" class="w-full h-[400px] object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg flex items-center justify-center">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Spa Treatment</h3>
+                            <p>Luxury spa experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="https://i.pinimg.com/736x/88/13/3d/88133d5cee57d1b7429f259fc133ff5f.jpg" alt="Portfolio 3" class="w-full h-[400px] object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg flex items-center justify-center">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Hair Design</h3>
+                            <p>Professional styling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-luxury-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Client Testimonials</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://i.pinimg.com/736x/13/b9/6e/13b96efd9572d535e96b5b17e42d65f1.jpg" alt="Client 1" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Amazing experience! The staff is professional and the services are top-notch."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://i.pinimg.com/736x/62/17/88/621788ed008f6fdcdafbf63f0faee704.jpg" alt="Client 2" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Emily Chen</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Best spa experience ever! The atmosphere is so relaxing and peaceful."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://i.pinimg.com/736x/ed/3b/32/ed3b324ebff911921bd000828e19e591.jpg" alt="Client 3" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Maria Garcia</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Professional service and amazing results. Will definitely come back!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Beauty & Spa</h3>
+                    <p class="text-gray-400">Your destination for beauty and wellness services.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Phnom Penh, Cambodia</li>
+                        <li>+855 016700896</li>
+                        <li>info@beautyspa.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Beauty & Spa Wellness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        mobileMenuButton.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            mobileMenu.classList.toggle('hidden');
+            
+            // Change icon based on menu state
+            if (isMenuOpen) {
+                mobileMenuButton.innerHTML = '<i class="fas fa-times text-2xl"></i>';
+            } else {
+                mobileMenuButton.innerHTML = '<i class="fas fa-bars text-2xl"></i>';
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target) && isMenuOpen) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.innerHTML = '<i class="fas fa-bars text-2xl"></i>';
+                isMenuOpen = false;
+            }
+        });
+
+        // Close mobile menu when window is resized to desktop size
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768 && isMenuOpen) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.innerHTML = '<i class="fas fa-bars text-2xl"></i>';
+                isMenuOpen = false;
+            }
+        });
+    </script>
+</body>
+</html> 
